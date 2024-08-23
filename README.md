@@ -1,6 +1,6 @@
 # Fall 2024 Learning Goals - W. Brooks Arthur
 
-## **Learning Goal 1: Develop Proficiency in Full-Stack Web Development with Advanced Tools
+## Learning Goal 1: Develop Proficiency in Full-Stack Web Development with Advanced Tools
 
 ### Learning Objective: 
 Gain expertise in both frontend and backend web development using advanced tools and frameworks such as Flask, Jest, Next.js, Tailwind, Ant Design, GraphQL, and Keystone to build dynamic, scalable, and responsive web applications.
