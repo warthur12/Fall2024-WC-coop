@@ -1,53 +1,38 @@
 import Image from "next/image";
 import React from "react";
-import { Button } from "antd";
+import { Button, Card } from "antd";
 
-export default function Home() {
+export default async function Home() {
+  const { data } = await fetch('http://localhost:4000/', {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      query: `
+    query GetUsers {
+      getUsers {
+        id
+        description
+        password
+        username
+      }
+    }
+  `,
+    }),
+    next: { revalidate: 10 },
+  }).then((res) => res.json());
+
+  let users = data?.getUsers;
+
+  console.log(users[2].username);
+
   return (
     <main>
       <div className="flex flex-row my-2 h-96">
-        <div className="flex flex-col basis-1/3 w-full h-full mx-2 rounded-md bg-orange">
-          <div className="basis-3/4 w-full text-center">
-            <h1 className="text-2xl">
-              Header 1
-            </h1>
-            <div className="h-4 w-full bg-white" />
-            <p>
-              sample text
-            </p>
-          </div>
-          <div className="basis-1/4">
-            <Button className="h-full w-full border-2 border-white" type="default">Button</Button>
-          </div>
-        </div>
-        <div className="flex flex-col basis-1/3 w-full h-full mx-2 rounded-md bg-orange">
-          <div className="basis-3/4 w-full text-center">
-            <h1 className="text-2xl">
-              Header 2
-            </h1>
-            <div className="h-4 w-full bg-white" />
-            <p>
-              sample text
-            </p>
-          </div>
-          <div className="basis-1/4">
-            <Button className="h-full w-full border-2 border-white" type="default">Button</Button>
-          </div>
-        </div>
-        <div className="flex flex-col basis-1/3 w-full h-full mx-2 rounded-md bg-orange">
-          <div className="basis-3/4 w-full text-center">
-            <h1 className="text-2xl">
-              Header 3
-            </h1>
-            <div className="h-4 w-full bg-white" />
-            <p>
-              sample text
-            </p>
-          </div>
-          <div className="basis-1/4">
-            <Button className="h-full w-full border-2 border-white" type="default">Button</Button>
-          </div>
-        </div>
+        {users?.map((user: { username: string, description: string }) => (
+          <Card className="basis-1/3 m-2 bg-orange border-black" title={user.username} hoverable={true} >{user.description}</Card>
+        ))}
       </div>
       <div className="my-2 w-full h-44">
         <div className="h-full w-full p-4 bg-white">
