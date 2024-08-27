@@ -15,6 +15,7 @@
     "@apollo/server": "^4.11.0",
     "@graphql-tools/mock": "^9.0.4",
     "@graphql-tools/schema": "^10.0.6",
+    "antd": "^5.20.3",
     "apollo-server-express": "^3.13.0",
     "cors": "^2.8.5",
     "datasource-sql": "^2.1.0",
