@@ -1,12 +1,3 @@
-A detailed list of projects worked on with the following information information will be stored here.
-- Name
-- Start Date
-- End Data
-- Tools Used
-- Description
-- Learning Objectives Acomplished
-- Notes
-
 ## GraphQL-Demo
 8/26/2024 | 8/27/2024
 

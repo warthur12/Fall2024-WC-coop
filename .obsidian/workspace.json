@@ -1,0 +1,169 @@
+{
+  "main": {
+    "id": "424d6ab6ef97f688",
+    "type": "split",
+    "children": [
+      {
+        "id": "e92035a76f3058d9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e14202d863e2b325",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "documents/documentsOutline.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9887ee626a4ca7a4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "projects/projectsOutline.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "c3bb0b0c98882e3c",
+    "type": "split",
+    "children": [
+      {
+        "id": "4b20c8f98056902b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "06e3e65123fe5fc9",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "958c38b25aa1bbd2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "a4535839fe911bca",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "0e5d09f5b4aa545c",
+    "type": "split",
+    "children": [
+      {
+        "id": "64a93ac3bc392608",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "145786b3d0e0bb01",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "projects/projectsOutline.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d19ce3914194130b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "projects/projectsOutline.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "23330d3394553e29",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "11d083fdc829946e",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "projects/projectsOutline.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "9887ee626a4ca7a4",
+  "lastOpenFiles": [
+    "projects/graphql-demo/README.md",
+    "projects/projectsOutline.md",
+    "README.md",
+    "documents/documentsOutline.md"
+  ]
+}

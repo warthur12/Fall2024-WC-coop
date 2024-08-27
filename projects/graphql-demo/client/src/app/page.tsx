@@ -25,13 +25,13 @@ export default async function Home() {
 
   let users = data?.getUsers;
 
-  console.log(users[2].username);
-
   return (
     <main>
       <div className="flex flex-row my-2 h-96">
         {users?.map((user: { username: string, description: string }) => (
-          <Card className="basis-1/3 m-2 bg-orange border-black" title={user.username} hoverable={true} >{user.description}</Card>
+          <Card className="basis-1/3 m-2 bg-orange border-black" title={user.username} hoverable={true} >
+            {user.description}
+          </Card>
         ))}
       </div>
       <div className="my-2 w-full h-44">

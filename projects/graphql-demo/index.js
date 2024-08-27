@@ -15,6 +15,15 @@ const { Database } = require("./datasource/dbDatasource");
 const app = express();
 app.use(cors());
 app.use(express.json());
+
+app.get('/', (req, res) => {
+  res.send('viewing server route');
+})
+
+app.listen(4060, () => {
+  console.log("Express listening on 4060");
+})
+
 async function startApolloServer() {
   const resolvers = await getResolvers();
   const server = new ApolloServer({
