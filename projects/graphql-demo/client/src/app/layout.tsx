@@ -19,11 +19,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <ConfigProvider
-      theme={{
-        token: {
-          colorPrimary: "#000000",
-        },
-      }}
     >
       <body className={inter.className}>
         <div>

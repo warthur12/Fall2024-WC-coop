@@ -29,26 +29,26 @@ export default async function Home() {
     <main>
       <div className="flex flex-row my-2 h-96">
         {users?.map((user: { username: string, description: string }) => (
-          <Card className="basis-1/3 m-2 bg-orange border-black" title={user.username} hoverable={true} >
+          <Card className="basis-1/3 m-2 bg-orange" title={user.username} hoverable={true} >
             {user.description}
           </Card>
         ))}
       </div>
       <div className="my-2 w-full h-44">
-        <div className="h-full w-full p-4 bg-white">
-          <div className="flex h-full w-full  rounded bg-black">
+        <div className="h-full w-full p-4">
+          <div className="flex h-full w-full">
             <div className="flex flex-row items-center w-full">
-              <div className="flex basis-1/4 h-full items-center bg-orange">
+              <div className="flex basis-1/4 h-full items-center rounded-l-lg bg-orange">
                 <div className="w-full text-center">
                   <p>test</p>
                 </div>
               </div>
-              <div className="flex basis-1/2 h-full items-center bg-black">
+              <div className="flex basis-1/2 h-full items-center bg-white">
                 <div className="w-full text-center">
                   <p>test</p>
                 </div>
               </div>
-              <div className="flex basis-1/4 h-full items-center bg-orange">
+              <div className="flex basis-1/4 h-full items-center rounded-r-lg bg-orange">
                 <div className="w-full text-center">
                   <p>test</p>
                 </div>
@@ -58,20 +58,20 @@ export default async function Home() {
         </div>
       </div>
       <div className="my-2 w-full h-44">
-        <div className="h-full w-full p-4 bg-white">
-          <div className="flex h-full w-full  rounded bg-black">
+        <div className="h-full w-full p-4">
+          <div className="flex h-full w-full">
             <div className="flex flex-row items-center w-full">
-              <div className="flex basis-1/4 h-full items-center bg-orange">
+            <div className="flex basis-1/4 h-full items-center rounded-l-lg bg-orange">
                 <div className="w-full text-center">
                   <p>test</p>
                 </div>
               </div>
-              <div className="flex basis-1/2 h-full items-center bg-black">
+              <div className="flex basis-1/2 h-full items-center bg-white">
                 <div className="w-full text-center">
                   <p>test</p>
                 </div>
               </div>
-              <div className="flex basis-1/4 h-full items-center bg-orange">
+              <div className="flex basis-1/4 h-full items-center rounded-r-lg bg-orange">
                 <div className="w-full text-center">
                   <p>test</p>
                 </div>
@@ -81,20 +81,20 @@ export default async function Home() {
         </div>
       </div>
       <div className="my-2 w-full h-44">
-        <div className="h-full w-full p-4 bg-white">
-          <div className="flex h-full w-full  rounded bg-black">
+        <div className="h-full w-full p-4">
+          <div className="flex h-full w-full">
             <div className="flex flex-row items-center w-full">
-              <div className="flex basis-1/4 h-full items-center bg-orange">
+            <div className="flex basis-1/4 h-full items-center rounded-l-lg bg-orange">
                 <div className="w-full text-center">
                   <p>test</p>
                 </div>
               </div>
-              <div className="flex basis-1/2 h-full items-center bg-black">
+              <div className="flex basis-1/2 h-full items-center bg-white">
                 <div className="w-full text-center">
                   <p>test</p>
                 </div>
               </div>
-              <div className="flex basis-1/4 h-full items-center bg-orange">
+              <div className="flex basis-1/4 h-full items-center rounded-r-lg bg-orange">
                 <div className="w-full text-center">
                   <p>test</p>
                 </div>

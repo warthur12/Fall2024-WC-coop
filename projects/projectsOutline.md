@@ -44,3 +44,5 @@ The project is very basic and does not specifically represent anything that woul
 Express is used very little in the project, the GraphQL database interpolation could be run through express to create a more easily accessible api environment.
 
 Along with a more accessible api environment additional features could be added which would require additional learning, such as: GraphQL mutations in order to allow users to create accounts, investigate ways to authenticate user information for security, expand the database and GraphQL resolvers in order to allow for more specific queries.
+
+This project could be containerized. The client and server run through different ports nad it *should* not be too difficult to create a Dockerfile for both and then run them in containers. Given the nature of the development of this project there is a very high chance that when containerized it could be found that much of the function of the app relied on system variables which would not be available in the container.
