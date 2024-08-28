@@ -161,9 +161,21 @@
   },
   "active": "9887ee626a4ca7a4",
   "lastOpenFiles": [
-    "README.md",
-    "projects/graphql-demo/README.md",
+    "documents/documentsOutline.md",
+    "projects/graphql-demo/client/src/app/pages/page4/page.tsx",
+    "projects/graphql-demo/client/src/app/pages/page4",
+    "projects/graphql-demo/client/src/app/pages/page3/page.tsx",
+    "projects/graphql-demo/client/src/app/pages/page3",
+    "projects/graphql-demo/client/src/app/pages/page2/page.tsx",
+    "projects/graphql-demo/client/src/app/pages/page2",
+    "projects/graphql-demo/client/src/app/pages/page1/page.tsx",
+    "projects/graphql-demo/client/src/app/pages/page1",
+    "projects/graphql-demo/client/src/app/pages",
+    "projects/graphql-demo/client/src/components/UserCard.tsx",
+    "projects/graphql-demo/client/node_modules/@ant-design/nextjs-registry/README.md",
+    "projects/graphql-demo/client/node_modules/styled-components/README.md",
     "projects/projectsOutline.md",
-    "documents/documentsOutline.md"
+    "projects/graphql-demo/README.md",
+    "README.md"
   ]
 }

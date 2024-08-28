@@ -18,6 +18,7 @@ const typeDefs = gql`
     username: String!
     password: String!
     description: String!
+    pfp: String
   }
 `;
 
@@ -57,6 +58,7 @@ async function getResolvers() {
             username: user.username,
             password: user.password,
             description: user.description,
+            pfp: user.pfp,
           });
         });
         return userArray;
@@ -67,6 +69,7 @@ async function getResolvers() {
           username: userData[args.id].username,
           password: userData[args.id].password,
           description: userData[args.id].description,
+          pfp: userData[args.id].pfp,
         };
       },
     },
