@@ -1,5 +1,6 @@
 const gql = require("graphql-tag");
 const UserDatabase = require("./datasource/user");
+const PostDatabase = require("./datasource/post");
 
 const typeDefs = gql`
   type Query {
@@ -7,11 +8,15 @@ const typeDefs = gql`
     getUsers: [User]!
     getUser(id: ID!): User
   }
+  type Mutation {
+    addPost(title: String!, content: String, date: String!, userId: ID!): Post
+  }
   type Post {
     id: ID!
     title: String!
-    postUser: String!
-    thumbnail: String
+    postId: ID!
+    date: String
+    content: String
   }
   type User {
     id: ID!
@@ -32,6 +37,7 @@ const knexConfig = {
 };
 
 const userdb = new UserDatabase(knexConfig);
+const postdb = new PostDatabase(knexConfig);
 
 async function getdbUsers() {
   console.log("getting users");
@@ -43,8 +49,19 @@ async function getdbUsers() {
   return userData;
 }
 
+async function getdbPosts() {
+  console.log("getting posts");
+  var postData = "";
+  const query = postdb.knex.select("*").from("Posts");
+  await query.then((data) => {
+    postData = data;
+  });
+  return postData;
+}
+
 async function getResolvers() {
-    const users = await getdbUsers();
+  const users = await getdbUsers();
+  const posts = await getdbPosts();
   const resolvers = {
     Query: {
       test() {
@@ -65,12 +82,17 @@ async function getResolvers() {
       },
       getUser(_, args) {
         return {
-          id: userData[args.id].userID,
-          username: userData[args.id].username,
-          password: userData[args.id].password,
-          description: userData[args.id].description,
-          pfp: userData[args.id].pfp,
+          id: users[args.id].userID,
+          username: users[args.id].username,
+          password: users[args.id].password,
+          description: users[args.id].description,
+          pfp: users[args.id].pfp,
         };
+      },
+    },
+    Mutation: {
+      addPost(_, args) {
+        id: postData
       },
     },
   };
