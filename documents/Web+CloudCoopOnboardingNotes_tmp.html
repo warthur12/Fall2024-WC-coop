@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web+CloudCoopOnboardingNotes.md</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+html,footer,header{
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Custom MD PDF CSS
+ */
+html,footer,header{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+
+ }
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+<link rel="stylesheet" href="file:///r%3A/2.Travail/1.Enseignement/Cours/_1.Outils/2.Developpement/1.SCSS/main.css" type="text/css"><link rel="stylesheet" href="file:///d%3A/rdaros/Cours/_1.Outils/2.Developpement/1.SCSS/main.css" type="text/css">
+</head>
+
+<body>
+    <h2 id="tldr">tl;dr</h2>
+<p>The content and links provided were very helpful in giving an overview of the tools used by the team. The hands-on activities were beneficial, and adding a more extensive project could enhance the learning experience. The order and content of the chapters could be slightly rearranged as follows (topics covered are in order):</p>
+<ul>
+<li>Chapter 1: Linux, WSL, Git</li>
+<li>Chapter 2: HTML, CSS, JS</li>
+<li>Chapter 3: TypeScript, React, Next.js, (GraphQL, Ant Design)</li>
+<li>Chapter 4: Node.js, (Apollo, SQL)</li>
+<li>Chapter 5: Docker</li>
+<li>Other Technologies: Python, and others</li>
+</ul>
+<h2 id="chapter-1">Chapter 1</h2>
+<p>This chapter served as a solid introduction to Linux, specifically WSL. For someone with limited knowledge of Linux, this chapter would bring them up to speed on what Linux is and how to use basic commands.</p>
+<p>The tutorials provided are excellent. Creating our own tutorials would be redundant given the vast resources available online. The guides are very helpful and offer great foundational learning. Including links for further exploration and documentation could be beneficial for new coops who want to delve deeper.</p>
+<p>The hands-on practice activity at the end of the chapter was useful. However, it could be more in-depth with additional steps or by incorporating a more comprehensive Linux introduction practice activity from the internet. For example: <a href="https://www.hackthebox.com/blog/learn-linux">Hack The Box Linux Learning</a>.</p>
+<h2 id="chapter-2">Chapter 2</h2>
+<p>This section's usefulness depends on the coop’s prior knowledge. For those with experience in HTML, CSS, and JavaScript, this chapter may be less critical. However, for someone new to these technologies, it would be quite valuable.</p>
+<p>The links provided are helpful and offer a good background on these tools. The hands-on practice activity is also useful, and I appreciate its open-ended nature. I personally find working in a sandbox environment beneficial when learning new tools or languages, so the activity's flexibility was advantageous.</p>
+<h2 id="chapter-3">Chapter 3</h2>
+<p>More emphasis on Git would be beneficial. I have encountered many instances where team members lacked Git knowledge, which delayed project progress. Given Git's importance in preventing issues, a bit more coverage would be helpful.</p>
+<p>The hands-on practice was once again very useful. I had already completed many LearnGit modules in a previous class, and this experience was a major factor in my Git proficiency.</p>
+<h2 id="chapter-4">Chapter 4</h2>
+<p>This chapter was where I spent most of my learning time. While I quickly completed Chapters 1-3, I dedicated more time to Chapters 4 and 5.</p>
+<p>I came into this coop confident in standard client-side JavaScript and Node/Express, but with no prior experience in TypeScript or Next.js, so I was learning these tools from scratch.</p>
+<p>The documentation links were very useful and will likely be valuable throughout the semester. However, the &quot;cheat sheets&quot; for TypeScript felt a bit overwhelming due to the dense information.</p>
+<p>I found it beneficial to create my own practice project to apply the new concepts. My goal was to build a basic app that collects data from a server and displays it to the client. Although the app was not very presentable, it served as a proof of concept and a reference for various tools.</p>
+<p>It might be a good idea for coops to undertake a similar project—a basic and open-ended one that allows them to apply what they have learned. My project lacked organization, and with more guidance, I could have developed something more substantial.</p>
+<h2 id="chapter-5">Chapter 5</h2>
+<p>Like Chapter 4, I had minimal prior experience with Docker. The guides provided were very helpful and gave me a good starting point for further research into containers. However, even after going through the guides and experimenting on my own, I still don’t feel fully comfortable working with containers in production.</p>
+<p>Given that other coops may have similar experiences, and likely little prior exposure to containerization, additional guidance could be helpful. A simple project, such as running a Node.js or Next.js server in a container, would be beneficial and is something I managed to accomplish on my own.</p>
+<h2 id="other-technologies">Other Technologies</h2>
+<p>The section on other technologies is useful but could be better integrated into the relevant chapters.</p>
+<p>GraphQL, Apollo, Ant Design, and SQL could be moved to Chapter 4. To avoid overwhelming coops, consider combining Chapters 1 and 3, as they both cover peripheral tools (Git and WSL) compared to the client/server focus of the other chapters. Chapter 4 could be split into two sections: client-side tools and server-side tools. Chapter 4.1 could cover TypeScript, React, Next.js, with additional reading on GraphQL and Ant Design. Chapter 4.2 could focus on Node.js, with additional reading on Apollo and SQL.</p>
+
+</body>
+
+</html>

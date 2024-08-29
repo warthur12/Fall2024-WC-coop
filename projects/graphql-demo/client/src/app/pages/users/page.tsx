@@ -6,7 +6,7 @@ import { Button } from "antd";
 import { ReadonlyURLSearchParams, useSearchParams } from 'next/navigation'
 
 import Banner from "@/components/Banner";
-import { getUsers, parseUser } from "@/util/auth";
+import { getAllUsers, parseUser } from "@/util/auth";
 
 export default function Home() {
     const content: ReadonlyURLSearchParams = useSearchParams();
@@ -14,7 +14,7 @@ export default function Home() {
     const [user, setUser] = useState<any>([]);
     useEffect(() => {
         async function apiCall() {
-            let response = await getUsers();
+            let response = await getAllUsers();
             response = parseUser(content.get('user') || "", response)
             setUser(response);
         }

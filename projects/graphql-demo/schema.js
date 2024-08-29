@@ -9,12 +9,12 @@ const typeDefs = gql`
     getUser(id: ID!): User
   }
   type Mutation {
-    addPost(title: String!, content: String, date: String!, userId: ID!): Post
+    addPost(title: String!, content: String!, date: String!, userID: ID!): [Post]
   }
   type Post {
-    id: ID!
+    postID: ID!
     title: String!
-    postId: ID!
+    userID: ID!
     date: String
     content: String
   }
@@ -34,6 +34,7 @@ const knexConfig = {
   connection: {
     filename: "./database/blog.db",
   },
+  useNullAsDefault: true,
 };
 
 const userdb = new UserDatabase(knexConfig);
@@ -92,11 +93,18 @@ async function getResolvers() {
     },
     Mutation: {
       addPost(_, args) {
-        id: postData
+        postdb.knex.insert({title: args.title, content: args.content, date: args.date, userID: args.userID}).into('Posts');
+        const userPosts = postdb.knex.select("*").from("Posts").where({userID: args.userID});
+        return userPosts;
       },
     },
   };
   return resolvers;
 }
+
+/**
+ * INSERT INTO Posts (title,content,date,userID)
+	VALUES ('admin post','post contents','8-29-24','1');
+ */
 
 module.exports = { typeDefs, getResolvers };

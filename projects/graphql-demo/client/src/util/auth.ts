@@ -1,4 +1,4 @@
-async function getUsers() {
+async function getAllUsers() {
     const { data } = await fetch('http://localhost:4000/', {
         method: "POST",
         headers: {
@@ -20,7 +20,7 @@ async function getUsers() {
         next: { revalidate: 10 },
       }).then((res) => res.json());
 
-      return data;
+      return data.getUsers;
 }
 
 function parseUser(selectUser: string, users: any) {
@@ -28,7 +28,7 @@ function parseUser(selectUser: string, users: any) {
     return ["Loading...", "Loading...", "Loading"];
   }
   let response: any[] = [];
-  users.getUsers.forEach((user: { username: string; description: string; pfp: string }) => {
+  users.forEach((user: { username: string; description: string; pfp: string }) => {
     if (user.username == selectUser) {
       response = [user.username, user.description, user.pfp]
     }
@@ -36,4 +36,4 @@ function parseUser(selectUser: string, users: any) {
   return response;
 }
 
-export { getUsers, parseUser };
+export { getAllUsers, parseUser };

@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8f643c7347e3e9c4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "documents/documentsOutline.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "documents/Web+CloudCoopOnboardingNotes.md",
+                "file": "documents/documentsOutline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "documents/Web+CloudCoopOnboardingNotes.md",
+                "file": "documents/documentsOutline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "documents/Web+CloudCoopOnboardingNotes.md"
+                "file": "documents/documentsOutline.md"
               }
             }
           }
@@ -171,23 +183,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7f673b4c18bee77d",
+  "active": "8f643c7347e3e9c4",
   "lastOpenFiles": [
-    "README.md",
+    "projects/graphql-demo/database/blog.db-journal",
+    "projects/graphql-demo/_tmp_28732_9b0cb2dae95db0f295f6a97e2e19108c",
     "documents/Web+CloudCoopOnboardingNotes.md",
-    "projects/graphql-demo/README.md",
+    "documents/Web+CloudCoopOnboardingNotes.pdf",
+    "documents/kv_specific/Onboarding Docs.md",
+    "documents/Web+CloudCoopOnboardingNotes_tmp.html",
+    "documents/documentsOutline.md",
+    "documents/kv_specific",
+    "documents/New folder",
+    "projects/graphql-demo/client/src/app/test3/page.tsx",
+    "projects/graphql-demo/client/src/app/test3",
     "projects/graphql-demo/client/src/app/pages/users/page.tsx",
     "projects/graphql-demo/client/src/app/pages/users",
-    "projects/projectsOutline.md",
-    "documents/documentsOutline.md",
-    "projects/graphql-demo/datasource/post.js",
     "projects/graphql-demo/client/src/app/pages/page4/page.tsx",
-    "projects/graphql-demo/client/src/app/pages/page4",
-    "projects/graphql-demo/client/src/app/pages/page3/page.tsx",
-    "projects/graphql-demo/client/src/app/pages/page3",
-    "projects/graphql-demo/client/src/app/pages/page2/page.tsx",
-    "projects/graphql-demo/client/src/app/pages/page2",
-    "projects/graphql-demo/client/src/app/pages/page1/page.tsx",
+    "README.md",
+    "projects/graphql-demo/README.md",
+    "projects/projectsOutline.md",
     "projects/graphql-demo/client/node_modules/@ant-design/nextjs-registry/README.md",
     "projects/graphql-demo/client/node_modules/styled-components/README.md"
   ]
