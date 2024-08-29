@@ -27,6 +27,9 @@ A simple demo application meant to allow for a safe space to test and understand
 5. Style pages using Tailwind css.
 6. Style and use components from Ant Design.
 7. Learn how to retrieve data from the locally hosted GraphQL server and parse and display the data.
+### Issues
+**Startup Cards**:
+	On startup the UserCards do not switch out of their loading state. Upon page refresh they load then populate.
 
 ### Notes
 ***Further Development***

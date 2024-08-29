@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "documents/documentsOutline.md",
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7f673b4c18bee77d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "documents/Web+CloudCoopOnboardingNotes.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "documents/documentsOutline.md",
+                "file": "documents/Web+CloudCoopOnboardingNotes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "documents/documentsOutline.md",
+                "file": "documents/Web+CloudCoopOnboardingNotes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "documents/documentsOutline.md"
+                "file": "documents/Web+CloudCoopOnboardingNotes.md"
               }
             }
           }
@@ -159,11 +171,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9887ee626a4ca7a4",
+  "active": "7f673b4c18bee77d",
   "lastOpenFiles": [
-    "projects/graphql-demo/datasource/post.js",
+    "README.md",
+    "documents/Web+CloudCoopOnboardingNotes.md",
+    "projects/graphql-demo/README.md",
+    "projects/graphql-demo/client/src/app/pages/users/page.tsx",
+    "projects/graphql-demo/client/src/app/pages/users",
     "projects/projectsOutline.md",
     "documents/documentsOutline.md",
+    "projects/graphql-demo/datasource/post.js",
     "projects/graphql-demo/client/src/app/pages/page4/page.tsx",
     "projects/graphql-demo/client/src/app/pages/page4",
     "projects/graphql-demo/client/src/app/pages/page3/page.tsx",
@@ -171,12 +188,7 @@
     "projects/graphql-demo/client/src/app/pages/page2/page.tsx",
     "projects/graphql-demo/client/src/app/pages/page2",
     "projects/graphql-demo/client/src/app/pages/page1/page.tsx",
-    "projects/graphql-demo/client/src/app/pages/page1",
-    "projects/graphql-demo/client/src/app/pages",
-    "projects/graphql-demo/client/src/components/UserCard.tsx",
     "projects/graphql-demo/client/node_modules/@ant-design/nextjs-registry/README.md",
-    "projects/graphql-demo/client/node_modules/styled-components/README.md",
-    "projects/graphql-demo/README.md",
-    "README.md"
+    "projects/graphql-demo/client/node_modules/styled-components/README.md"
   ]
 }

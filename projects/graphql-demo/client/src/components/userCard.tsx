@@ -7,7 +7,7 @@ import { Button, Card } from 'antd';
 function UserCard(props: any) {
     const cardLoaded = (
         <div className='basis-1/3 p-2 h-full w-full'>
-            <Card className="bg-orange w-full h-full" size="default" onClick={() => window.location.replace(`/users?user=${props.user.username}`)} title={props.user.username} hoverable={true} loading={props.loading}>
+            <Card className="bg-orange w-full h-full" size="default" onClick={() => window.location.replace(`/pages/users?user=${props.user.username}`)} title={props.user.username} hoverable={true} loading={props.loading}>
                 {props.user.description}
             </Card>
         </div>
