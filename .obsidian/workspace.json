@@ -8,42 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e14202d863e2b325",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "documents/documentsOutline.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9887ee626a4ca7a4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "README.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7f673b4c18bee77d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "documents/Web+CloudCoopOnboardingNotes.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8f643c7347e3e9c4",
             "type": "leaf",
             "state": {
@@ -54,9 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "de2bb5439039c1cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "documents/kv_specific/Deploy Steps.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -122,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "documents/documentsOutline.md",
+                "file": "documents/kv_specific/Deploy Steps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "documents/documentsOutline.md",
+                "file": "documents/kv_specific/Deploy Steps.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "documents/documentsOutline.md"
+                "file": "documents/kv_specific/Deploy Steps.md"
               }
             }
           }
@@ -183,23 +159,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8f643c7347e3e9c4",
+  "active": "de2bb5439039c1cf",
   "lastOpenFiles": [
+    "documents/documentsOutline.md",
+    "documents/kv_specific/Deploy Steps.md",
+    "documents/kv_specific/Onboarding Docs.md",
+    "documents/Web+CloudCoopOnboardingNotes.pdf",
+    "documents/Web+CloudCoopOnboardingNotes.md",
+    "README.md",
+    "projects/graphql-demo/client/public/vercel.svg",
+    "projects/graphql-demo/client/public/next.svg",
     "projects/graphql-demo/database/blog.db-journal",
     "projects/graphql-demo/_tmp_28732_9b0cb2dae95db0f295f6a97e2e19108c",
-    "documents/Web+CloudCoopOnboardingNotes.md",
-    "documents/Web+CloudCoopOnboardingNotes.pdf",
-    "documents/kv_specific/Onboarding Docs.md",
     "documents/Web+CloudCoopOnboardingNotes_tmp.html",
-    "documents/documentsOutline.md",
     "documents/kv_specific",
     "documents/New folder",
     "projects/graphql-demo/client/src/app/test3/page.tsx",
     "projects/graphql-demo/client/src/app/test3",
     "projects/graphql-demo/client/src/app/pages/users/page.tsx",
     "projects/graphql-demo/client/src/app/pages/users",
-    "projects/graphql-demo/client/src/app/pages/page4/page.tsx",
-    "README.md",
     "projects/graphql-demo/README.md",
     "projects/projectsOutline.md",
     "projects/graphql-demo/client/node_modules/@ant-design/nextjs-registry/README.md",
