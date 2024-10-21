@@ -18,7 +18,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: React.PropsWithChildren) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
       <AntdRegistry>
@@ -32,24 +34,9 @@ export default function RootLayout({
             }
           }}
         >
-          <body className={inter.className}>
-            <div>
-              <Link href={"/"}>
-                <h1 className="text-center font-bold text-6xl">
-                  Home
-                </h1>
-              </Link>
-            </div>
-            <div className="flex flex-row">
-              <NavButton page="pages/page1"></NavButton>
-              <NavButton page="pages/page2"></NavButton>
-              <NavButton page="pages/page3"></NavButton>
-              <NavButton page="pages/page4"></NavButton>
-            </div>
-            {children}
-          </body>
+          <body className="font-mono">{children}</body>
         </ConfigProvider>
       </AntdRegistry>
     </html>
-  );
+  )
 }
