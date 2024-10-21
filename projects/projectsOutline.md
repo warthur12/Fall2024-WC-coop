@@ -1,3 +1,7 @@
+----
+> [!Most Projects are now located in WSL and thus will not appear on this page. Check github for all projects https://github.com/warthur12]
+----
+
 A detailed list of projects worked on with the following information information will be stored here.
 - Name
 - Start Date
