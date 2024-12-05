@@ -8,20 +8,91 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9a6d5c8ff88df3af",
+            "id": "2a20fd3489ce35bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "documents/Keystone/Auth and Access Controls.md",
+                "file": "documents/kv_specific/SOPACK/SPK-572.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Auth and Access Controls"
+              "title": "SPK-572"
+            }
+          },
+          {
+            "id": "1a38fb166def65dd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "documents/kv_specific/SOPACK/SPK-636.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SPK-636"
+            }
+          },
+          {
+            "id": "4bc47cc9331cb01f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "documents/kv_specific/SOPACK/SPK-637.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SPK-637"
+            }
+          },
+          {
+            "id": "96f5a9f784f2228d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Todo.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Todo"
+            }
+          },
+          {
+            "id": "b186a1cd1c7d018a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "documents/Nginx/Starting and Stopping.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Starting and Stopping"
+            }
+          },
+          {
+            "id": "c3527d8c976b7e8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "documents/kv_specific/Onboarding Docs.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Onboarding Docs"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -159,50 +230,57 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "vscode-editor:Create Code File": false
     }
   },
-  "active": "9a6d5c8ff88df3af",
+  "active": "c3527d8c976b7e8d",
   "lastOpenFiles": [
-    "projects/graphql-demo/client/src/app/pages/page.tsx",
-    "projects/graphql-demo/client/src/app/pages/layout.tsx",
-    "projects/graphql-demo/client/src/app/pages/globals.css",
-    "projects/graphql-demo/client/src/app/pages/favicon.ico",
-    "projects/graphql-demo/client/src/app/layoutTest/globals.css",
-    "projects/graphql-demo/client/src/app/layoutTest/layout.tsx",
-    "projects/graphql-demo/client/src/app/layoutTest/page.tsx",
-    "projects/graphql-demo/client/src/app/layoutTest",
+    "documents/kv_specific/KV Accountability + Org Chart - CURRENT.pdf",
+    "documents/kv_specific/Innovation Center Seating Chart.pdf",
+    "documents/kv_specific/Dev Containers.md",
+    "documents/kv_specific/Deploy Steps.md",
     "Todo.md",
     "Todo-Inights.md",
-    "documents/Keystone/Images and Files.md",
-    "README.md",
-    "Misc",
+    "documents/Nginx/Configuration File Strucutre.md",
+    "documents/Nginx/Serving Static Content.md",
+    "documents/Nginx/Starting and Stopping.md",
+    "projects/graphql-demo/client/src/app/pages/globals.css",
+    "projects/graphql-demo/client/tailwind.config.ts",
+    "projects/graphql-demo/client/next-env.d.ts",
+    "projects/graphql-demo/index.js",
+    "Cloud Computing.md",
     "Misc/Obsidian Theme.md",
-    "projects/projectsOutline.md",
-    "documents/Web+CloudCoopOnboardingNotes.pdf",
-    "documents/documentsOutline.md",
-    "documents/Untitled.canvas",
-    "documents/Web+CloudCoopOnboardingNotes.md",
-    "documents/Keystone/Auth and Access Controls.md",
-    "2024-10-16.md",
-    "documents/Keystone/Hooks.md",
-    "Overview of Keystone Authentication.md",
-    "documents/Keystone/Config/Session.md",
+    "documents/Nginx",
+    "Azure",
+    "README.md",
+    "documents/kv_specific/SOPACK/SPK-636.md",
+    "documents/kv_specific/SOPACK/SPK-637.md",
+    "documents/kv_specific/SOPACK/SPK-638.md",
+    "documents/kv_specific/SOPACK/SPK-572.md",
+    "documents/Pandas/Excel Reader.md",
     "documents/kv_specific/Cisco.md",
-    "documents/Keystone/Command Line.md",
-    "documents/Keystone/Auth",
-    "documents/Keystone/Config/Hooks Config.md",
-    "documents/Keystone/Config/Context Config.md",
-    "The.md",
-    "documents/Keystone/Relationships.md",
-    "documents/Keystone/Query Filters.md",
-    "documents/Keystone/Migrations.md",
-    "documents/kv_specific/Deploy Steps.md",
-    "Untitled.canvas",
+    "documents/kv_specific/SOPACK/images",
+    "documents/kv_specific/SOPACK/images/Pasted image 20241023144435.png",
+    "documents/kv_specific/SOPACK",
+    "documents/Pandas/Tutorial/Importing and Exporting.md",
+    "documents/Pandas/Excel Writer.md",
+    "documents/Pandas/Tutorial/Categoricals.md",
+    "documents/Pandas/Tutorial",
+    "documents/Pandas/Tutorial/Plotting.md",
+    "documents/Pandas/Tutorial/Grouping.md",
+    "documents/Pandas/Tutorial/Missing Data.md",
+    "documents/Pandas/Tutorial/Viewing Data.md",
+    "documents/Pandas/Tutorial/Images/Pasted image 20241023103254.png",
+    "documents/Pandas/Tutorial/Images/Pasted image 20241023102852.png",
+    "documents/Pandas/Tutorial/Images/Pasted image 20241023102630.png",
+    "documents/Pandas/Tutorial/Images/Pasted image 20241023102535.png",
     "documents/kv_specific/Onboarding Docs.md",
+    "documents/Pandas/Tutorial/Images/Pasted image 20241023102413.png",
+    "documents/Pandas/Tutorial/Time Series.md",
+    "documents/Untitled.canvas",
+    "Untitled.canvas",
     "projects/graphql-demo/client/public/vercel.svg",
-    "projects/graphql-demo/client/public/next.svg",
-    "projects/graphql-demo/README.md",
-    "projects/graphql-demo/client/node_modules/@ant-design/nextjs-registry/README.md"
+    "projects/graphql-demo/client/public/next.svg"
   ]
 }
