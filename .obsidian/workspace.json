@@ -81,18 +81,30 @@
             "id": "c3527d8c976b7e8d",
             "type": "leaf",
             "state": {
+              "type": "pdf",
+              "state": {
+                "file": "documents/kv_specific/Innovation Center Seating Chart.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "Innovation Center Seating Chart"
+            }
+          },
+          {
+            "id": "6cb28670cff651de",
+            "type": "leaf",
+            "state": {
               "type": "markdown",
               "state": {
-                "file": "documents/kv_specific/Onboarding Docs.md",
+                "file": "Misc/Stock Notes.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Onboarding Docs"
+              "title": "Stock Notes"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -234,14 +246,18 @@
       "vscode-editor:Create Code File": false
     }
   },
-  "active": "c3527d8c976b7e8d",
+  "active": "6cb28670cff651de",
   "lastOpenFiles": [
-    "documents/kv_specific/KV Accountability + Org Chart - CURRENT.pdf",
     "documents/kv_specific/Innovation Center Seating Chart.pdf",
+    "Misc/Stock Notes.md",
+    "documents/kv_specific/KV Accountability + Org Chart - CURRENT.pdf",
+    "documents/kv_specific/Cisco.md",
+    "Todo-Inights.md",
+    "Cloud Computing.md",
+    "documents/kv_specific/Onboarding Docs.md",
     "documents/kv_specific/Dev Containers.md",
     "documents/kv_specific/Deploy Steps.md",
     "Todo.md",
-    "Todo-Inights.md",
     "documents/Nginx/Configuration File Strucutre.md",
     "documents/Nginx/Serving Static Content.md",
     "documents/Nginx/Starting and Stopping.md",
@@ -249,7 +265,6 @@
     "projects/graphql-demo/client/tailwind.config.ts",
     "projects/graphql-demo/client/next-env.d.ts",
     "projects/graphql-demo/index.js",
-    "Cloud Computing.md",
     "Misc/Obsidian Theme.md",
     "documents/Nginx",
     "Azure",
@@ -259,14 +274,12 @@
     "documents/kv_specific/SOPACK/SPK-638.md",
     "documents/kv_specific/SOPACK/SPK-572.md",
     "documents/Pandas/Excel Reader.md",
-    "documents/kv_specific/Cisco.md",
     "documents/kv_specific/SOPACK/images",
     "documents/kv_specific/SOPACK/images/Pasted image 20241023144435.png",
     "documents/kv_specific/SOPACK",
     "documents/Pandas/Tutorial/Importing and Exporting.md",
     "documents/Pandas/Excel Writer.md",
     "documents/Pandas/Tutorial/Categoricals.md",
-    "documents/Pandas/Tutorial",
     "documents/Pandas/Tutorial/Plotting.md",
     "documents/Pandas/Tutorial/Grouping.md",
     "documents/Pandas/Tutorial/Missing Data.md",
@@ -275,9 +288,7 @@
     "documents/Pandas/Tutorial/Images/Pasted image 20241023102852.png",
     "documents/Pandas/Tutorial/Images/Pasted image 20241023102630.png",
     "documents/Pandas/Tutorial/Images/Pasted image 20241023102535.png",
-    "documents/kv_specific/Onboarding Docs.md",
     "documents/Pandas/Tutorial/Images/Pasted image 20241023102413.png",
-    "documents/Pandas/Tutorial/Time Series.md",
     "documents/Untitled.canvas",
     "Untitled.canvas",
     "projects/graphql-demo/client/public/vercel.svg",
