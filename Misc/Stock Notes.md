@@ -96,3 +96,69 @@ $$
 \theta = \tan^{-1}\left(\frac{y + y_{\min}}{x + x_{\min}}\right)
 $$
 Set min to 0 and you get a cool spiral that only has points that have points that have positive x and y.
+
+
+# Supplemental Notes (BS)
+maybe update app volume to ../:workspace:cached
+or maybe: ../:workspace:rw
+rw = read/write I assume
+
+actually scrap that, try to use a bind mount for the main workspace. Bind mount create a link between the local and the container code.
+
+services:
+  frontend:
+    image: node:lts
+    volumes:
+      - type: bind
+        source: ../
+        target: /workspace
+volumes:
+  myapp:
+
+wait no, actually, just check the .devcontainer and set the ${localworkspacefolder} to the root (../)
+https://code.visualstudio.com/remote/advancedcontainers/improve-performance#_use-a-named-volume-for-your-entire-source-tree
+
+add watch to the dev container compose
+
+Create database funciton for the following:
+* updating option (singular)
+	* pass the option name and amount of change
+* geting options
+	* No func var just a response dict
+
+Clean out the server, make it basic so that you can build off of it again. Mostly focus on clearning out the express, seeding, and keystone.ts
+Go back to v2 and check to see how the server is getting env data.
+
+Also clean out the auth, which might take some head scratching, but I think you just need to focus on the auth.ts file and then removing the withAuth from the keystone.ts
+
+Add a queue table in the database and a similar model in the schema.ts file. I'm pretty sure that if you update this it will cascade across the whole server.
+Something like this should work:
+tQueue: list({
+    access: allowAll,
+    graphql: {
+      plural: 'QueueList',
+    },
+    fields: {
+      // Id should be auto incrimented so I dont think you need to worry about it here.
+      queueType: text({ validation: { isRequired: treu } }),
+      queueDetails: text
+      optionName: text({ validation: { isRequired: true } }),
+      price: decimal({ precision: 10, scale: 2, validation: { isRequired: true } }),
+      historicalPrices: relationship({ ref: 'tHistoricalPrices.optionId', many: true }),
+      carrots: relationship({ ref: 'tCarrots.optionId', many: true }), 
+    },
+  }),
+
+
+Things that should be in a queue:
+- queue type: get_option(s), buy_option, etc.
+- queue details: json object of the required details.
+	- For get options:
+		- this one doesnt necessarily need any details but in the future we might want to have it so that different users can see different things so it might be worth sending in the user id if they are logged in and an empty json object if they are not. Other details can be added later.
+	- buy_option:
+		- option id, user id, hashed password, amount
+- queue status: This one is importatnt for letting the client know the status of where their request is in the worker. It would likely have two three states (possible more later): waiting, finished, failed.
+	- waiting: the request is still sitting in the queue somewhere.
+	- finished: the request has completed successfully. There will likely need to be some kind of cleanup function that clears out the finished requests after a certain amount of time. It might also be worth making a function that compiles all of the requests the in the queue, finished included, in case something happens and we want to keep track of what queues had run during the time of the incident.
+	- failed: The request failed for whatever reason. There should be another table for logs in the future that would hold details from this request and the details of the error that had occured. The request id would be the nullable foreign key since not every error or log would have a link to a request.
+
